@@ -1,0 +1,106 @@
+main{
+    margin: 0;
+    padding: 0;
+}
+#main-img{
+    position: relative;
+    max-height: 100vh;
+    overflow: hidden;
+}
+#main-img img{
+    width: 100%;
+}
+#francuska{
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 250%;
+    color: #005688;
+    padding: 2% 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 22px;
+}
+#intro{
+    margin: 5%;
+}
+hr{
+    margin: 5%;
+	border: 0;
+	height: 2px;
+    background-image: linear-gradient(to right, rgba(0,86,136,0), rgba(0,86,136,75), rgba(0,86,136,0));
+    margin-bottom: 4%;
+}
+#intro p{
+    opacity: 0;
+    margin: 0 5%;
+    font-size: 110%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 200%;
+    letter-spacing: 0.5px;
+    transition: opacity 2s;
+}
+
+/* Slideshow */
+
+#slideshow{
+    opacity: 0;
+    width: 900px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    transition: opacity 2s;
+}
+.slides{
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+}
+.active{
+    opacity: 1;
+    z-index: 2;
+}
+
+/* Media */
+
+@media (max-width: 935px){
+    #francuska{
+        font-size: 180%;
+        border-radius: 15px;
+    }
+    #slideshow{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 700px){
+    #francuska{
+        font-size: 130%;
+        border-radius: 10px;
+        padding: 2% 5%;
+        width: 40%;
+        text-align: center;
+    }
+    #slideshow{
+        width: 100%;
+    }
+    hr{
+        margin: 40px;
+    }
+}
+
+@media (max-width: 500px){
+    #francuska{
+        font-size: 100%;
+    }
+}

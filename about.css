@@ -1,0 +1,120 @@
+main{
+    text-align: center;
+    background: url(img/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+}
+#information
+{
+    width: 100%;
+    background-color: #fff;
+}
+hr{
+    margin: 5%;
+	border: 0;
+	height: 2px;
+    background-image: linear-gradient(to right, rgba(0,86,136,0), rgba(0,86,136,75), rgba(0,86,136,0));
+    margin-bottom: 5%;
+}
+#img-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+#img-text img{
+    flex: 1;
+    height: 60%;
+    width: 40%;
+    margin: 0 5%;
+}
+#img-text p{
+    flex: 1;
+    text-align: left;
+    margin: 0 5%;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #474747;
+}
+h1{
+    margin: 5%;
+    letter-spacing: 5px;
+    font-size: 40px;
+    color: #005688;
+}
+#current{
+    color: #005688;
+}
+
+/* Media */
+
+@media (max-width: 935px){
+    main{
+        min-height: 0;
+    }
+    #information{
+        width: 100%;
+    }
+    #img-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 5%;
+    }
+    #img-text img{
+        margin: 0 5%;
+        width: 80%;
+        height: auto;
+        margin-bottom: 10%;
+    }
+    #img-text p{
+        flex: 1;
+        text-align: left;
+        margin: 0 5%;
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 690px){
+    main{
+        margin: 0;
+        padding: 0;
+    }
+    #img-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 5%;
+    }
+    #img-text img{
+        margin: 0 5%;
+        width: 80%;
+        height: auto;
+        margin-bottom: 10%;
+    }
+    #img-text p{
+        flex: 1;
+        text-align: left;
+        margin: 0 5%;
+        font-size: 16px;
+    }
+    h1{
+        font-size: 35px;
+        margin: 10%;
+    }
+    hr{
+        margin: 20px;
+    }
+    p{
+        font-size: 18px;
+        max-width: 700px;
+        margin-bottom: 10%;
+    }
+}

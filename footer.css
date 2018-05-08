@@ -1,0 +1,52 @@
+footer h3{
+    letter-spacing: 1px;
+}
+#last-info{
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+}
+#last-info h2{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+address{
+    margin: 10% 0;
+    line-height: 150%;
+}
+#visit-fb{
+    text-align: center;
+}
+#visit-fb i{
+    font-size: 60px;
+    margin: 10% 0;
+    color: #005688;
+}
+#credits{
+    background-color: #f1f1f1;
+    padding: 10px;  
+    display: flex;
+    justify-content: flex-end;
+    border-top: 0.5px solid #a0a0a0;
+    font-size: 14px;
+}
+#credits h3{
+    margin-right: 10%; 
+    letter-spacing: 2px; 
+}
+
+@media (max-width: 690px){
+    #last-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    #addr{
+        margin-bottom: 15%;
+    }
+    #visit-fb{
+        margin-bottom: 10%;
+    }
+    #credits h3{
+        margin: 0 auto;
+    }
+}
