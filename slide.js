@@ -30,12 +30,23 @@ let slideshow = $('#slideshow');
 
 $(window).on('scroll', function () {
     let top = $(this).scrollTop();
-    if (top > 400) {
+    if (top > 400 && $(window).width() > 600) {
         paragraph.css({
             'opacity': 1
         });
     }
-    if (top > 600) {
+    if (top > 600 && $(window).width() > 600) {
+        slideshow.css({
+            'opacity': 1
+        });
+    }
+    /* For smaller screens */
+    if ($(window).width() < 600) {
+        paragraph.css({
+            'opacity': 1
+        });
+    }
+    if ($(window).width() < 600) {
         slideshow.css({
             'opacity': 1
         });
